@@ -1,25 +1,27 @@
 @font-face {
     font-family: 'Tiempos';
-    src: url(fonts/TiemposHeadline-Medium.otf);
+    src: url(../fonts/TiemposHeadline-Medium.otf);
 }
 
 @font-face {
   font-family: 'Proxima Nova';
-  src: url(fonts/ProximaNova-Regular.otf);
+  src: url(../fonts/ProximaNova-Regular.otf);
 }
 
 body {
   color: #333333;
   font-family: 'Proxima Nova';
-  padding: 50px;
+  padding: 0px;
   line-height: 28px;
+  background-color: #f4f4f4;
 }
 
 
 h1 {
   font-family: 'Tiempos';
   font-size: 35px;
-  line-height: 50px;
+  line-height: 40px;
+  font-weight: normal;
 }
 
 h2 {
@@ -34,6 +36,8 @@ h4 {
   font-family: 'Proxima Nova';
   font-size: 20px;
   color: #424242;
+  font-weight: normal;
+
 }
 
 p {
@@ -42,14 +46,174 @@ p {
 }
 
 a {
+  font-size: 16px;
   color: #fcac42;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
+/*FOR SEMANTIC STYLES*/
 .orange {
   color: #fcac42;
 }
 
+.white {
+  color: white;
+}
+
+.low-opacity {
+  opacity: .8;
+}
+
+.button {
+  padding: 8px 25px 8px 25px;
+  width: max-content;
+  color: white;
+    background-color: rgba(252, 172, 66, 0.3);
+  border: 2px solid #fcac42;
+    border-radius: 3px;
+  font-family: 'Proxima Nova';
+    font-size: 16px;
+        font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  transition: .3s ease;
+}
+
+.button:hover {
+  background-color: rgba(252, 172, 66, 1);
+}
+/*END OF SEMANTIC STYLES*/
+
 /*FOR NAVIGATION*/
+.nav {
+  background-color: white;
+  border-bottom: 2px solid #fcac42;
+  width: 100%;
+  height: 70px;
+}
+
+.nav-content {
+  width: 80%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.nav-logo {
+  width: auto;
+  height: 100%;
+  float: left;
+  margin-top: 5px;
+}
+
+.nav-links {
+  margin-top: 20px;
+  width: auto;
+  height: 100%;
+  float: right;
+  display: inline-block;
+}
+
+.nav-links a {
+  padding: 0 10px 0 10px;
+  color: #333333;
+}
 
 /*END OF NAVIGATION*/
+
+.primary-container-hero, .primary-container {
+  width: 80%;
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+/*FOR HERO CARD*/
+.hero-card {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #2052ce;
+  border-radius: 5px;
+}
+
+.hero-text {
+  position: absolute;
+  left: 100px;
+  top: 80px;
+  width: 400px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: -15px;
+}
+
+.hero-image img {
+  position: absolute;
+  width: 700px;
+  height: auto;
+  right: 40px;
+  bottom: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*END OF HERO CARD*/
+
+
+
+
+
+/*LARGE MEDIA QUERIES*/
+@media (max-width: 1260px) {
+  .hero-image img {
+    width: 600px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .primary-container-hero {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .hero-card {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .hero-text {
+    left: 85px;
+  }
+
+  .hero-image img {
+    width: 550px;
+  }
+}
+/*END OF LARGE MEDIA QUERIES*/
+
+/*MEDIUM MEDIA QUERIES*/
+@media (max-width: 800px) {
+  .hero-text {
+    top: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-text .button {
+    margin: auto;
+  }
+
+  .hero-image img {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+  }
+}
+/*END OF MEDIUM MEDIA QUERIES*/
