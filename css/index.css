@@ -115,14 +115,29 @@ hr {
   margin-bottom: -60px;
 }
 
+.number {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+  .number img {
+    width: 60px;
+  }
+
+  .n2 {
+    top: -20px;
+    right: 20px;
+  }
+
 /*END OF SEMANTIC STYLES*/
 
 /*FOR NAVIGATION*/
 .nav {
-  background-color: white;
-  border-bottom: 2px solid #fcac42;
   width: 100%;
   height: 70px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
 }
 
 .nav-content {
@@ -268,6 +283,7 @@ hr {
   background-position: center;
   background-size: cover;
   padding-top: 20px;
+  border-bottom: 5px solid #fcac42;
 }
 
   .fw1 {
@@ -283,6 +299,7 @@ hr {
   }
 
   .card {
+    position: relative;
     width: 500px;
     height: 400px;
     background-color: white;
@@ -383,3 +400,17 @@ hr {
     }
 }
 /*END OF MEDIUM MEDIA QUERIES*/
+
+/*MOBILE MEDIA QUERY*/
+@media (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .primary-container {
+    width: 95%;
+  }
+  .card {
+
+  }
+}
