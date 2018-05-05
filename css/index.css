@@ -86,9 +86,35 @@ a {
   transition: .3s ease;
 }
 
-.button:hover {
-  background-color: rgba(252, 172, 66, 1);
+  .btn-bright {
+    margin-top: 35px;
+    background-color: rgba(252, 172, 66, 0);
+    color: #333333;
+  }
+
+  .btn-bright:hover {
+  }
+
+
+  .button:hover {
+    background-color: rgba(252, 172, 66, 1);
+  }
+
+.centered {
+  text-align: center;
 }
+
+hr {
+  margin: 50px 0px 50px 0px;
+  border: 1px solid grey;
+}
+
+.v1 img {
+  width: 6px;
+  margin: auto;
+  margin-bottom: -60px;
+}
+
 /*END OF SEMANTIC STYLES*/
 
 /*FOR NAVIGATION*/
@@ -132,6 +158,10 @@ a {
   max-width: 1200px;
   margin: auto;
   margin-top: 30px;
+}
+
+.smaller {
+  max-width: 1000px;
 }
 
 /*FOR HERO CARD*/
@@ -189,9 +219,6 @@ a {
 .apps {
   width: 100%;
   height: 100%;
-  background-color: white;
-  border-top: 2px solid orange;
-  border-bottom: 2px solid orange;
   margin-top: 100px;
   text-align: center;
   margin-bottom: 100px;
@@ -200,9 +227,79 @@ a {
 #large-img {
   width: 80%;
   max-width: 1000px;
-  margin-top: -20px;  
+  margin-top: -20px;
   margin-bottom: 40px;
 }
+
+.img-rounded {
+  width: 300px;
+  border-radius: 5px;
+  float: right;
+  margin-right: 25px;
+}
+
+  .img-rounded2 {
+    float: left;
+    margin-right: 0px;
+  }
+
+.side-text {
+  width: 100%;
+  max-width: 400px;
+  float: left;
+  margin-left: 25px;
+}
+
+  .side-text2 {
+    float: right;
+    margin-left: 0px;
+  }
+
+.label {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.full-width {
+  width: 100%;
+  height: 500px;
+  background-color: #e0e0e0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20px;
+}
+
+  .fw1 {
+      background-image: url('../assets/stock-researchers.png');
+  }
+
+  .fw2 {
+      background-image: url('../assets/stock-runner.png');
+  }
+
+  .fw3 {
+      background-image: url('../assets/stock-patients.png');
+  }
+
+  .card {
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    padding: 15px 50px 15px 50px;
+    border-radius: 5px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+
+    .card:hover {
+      box-shadow: 0 5px 20px rgba(0,0,0,0.25), 0 10px 5px rgba(0,0,0,0.22);
+    }
+
+    .c2 {
+      float: right;
+    }
 /*END OF PRIMARY HOMEPAGE CONTENT*/
 
 
@@ -270,5 +367,19 @@ a {
     margin-right: auto;
     width: 450px;
   }
+
+  .card {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+    .card .button {
+      margin: auto;
+    }
+
+    .c2 {
+      float: none;
+    }
 }
 /*END OF MEDIUM MEDIA QUERIES*/
