@@ -130,7 +130,7 @@ a {
 }
 
 hr {
-  margin: 50px 0px 50px 0px;
+  margin: 80px 0px 30px 0px;
   border: 1px solid grey;
 }
 
@@ -288,13 +288,13 @@ hr {
 }
 
 .icon img {
-  width: 50px;
+  width: 200px;
 }
 
 .step {
   text-align: center;
   height: 100%;
-  min-height: 400px;
+  min-height: 550px;
 }
 
 .apps {
@@ -549,6 +549,10 @@ hr {
     max-width: 400px;
     margin: auto;
     margin-bottom: 30px;
+  }
+
+  .container-map {
+    width: 100%;
   }
 
 }
