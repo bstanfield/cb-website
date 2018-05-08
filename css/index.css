@@ -589,3 +589,36 @@ hr {
   }
 
 }
+
+/*SIGNUP FLOW*/
+.form-flow {
+  padding: 50px;
+  border: 1px solid #999;
+}
+
+input {
+  margin: 10px 0;
+}
+
+.form-input {
+  width: 100%;
+  color: #333;
+}
+
+.form-input-radio {
+  margin-left: 20px;
+}
+
+.form-input-select select{
+  width: 100%;
+  padding: 8px;
+  background-color: white;
+}
+
+.input-label {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+  float: left;
+  letter-spacing: 1px;
+}
